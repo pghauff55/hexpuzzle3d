@@ -4,9 +4,6 @@
 
 #include <termios.h>
 
-#include "opencv2/objdetect/objdetect.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
 
 // GL and related includes
 
@@ -21,7 +18,7 @@
 // Local includes
 #include "hexplanet.h"
 using namespace std;
-using namespace cv;
+
 
 //=========================================
 // globals (mostly for dealing with glut/gui)
