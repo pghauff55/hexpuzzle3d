@@ -2,4 +2,4 @@
 Hex Planet Puzzle
 
 
-sudo apt-get install freeglut3 freeglut3-dev
+sudo apt-get install freeglut3 freeglut3-dev openexr
