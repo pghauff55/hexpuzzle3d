@@ -14,7 +14,7 @@
 
 #include <GL/glut.h>
 
-#include "SOIL.h"
+#include <SOIL/SOIL.h>
 // Local includes
 #include "hexplanet.h"
 using namespace std;
