@@ -135,10 +135,8 @@ Imath::V3f x,y,z,Yt,Xt,Zt;
 printf("   SVEC(%2.3f  %2.3f   %2.3f ) X(%2.3f   %2.3f   %2.3f )  Y(%2.3f  %2.3f   %2.3f )   Z(%2.3f  %2.3f   %2.3f )\n",SVEC[0],SVEC[1],SVEC[2],X[0],X[1],X[2],Y[0],Y[1],Y[2],Z[0],Z[1],Z[2]);
 
 y[0]=-SVEC[0];
-if(SVEC[1]>0.0f)
-y[1]=sin(M_PI/2.0f-atan( abs(SVEC[1])/sqrt(SVEC[0]*SVEC[0]+SVEC[2]*SVEC[2]) ) );
-else
-y[1]=-sin(M_PI/2.0f-atan( abs(SVEC[1])/sqrt(SVEC[0]*SVEC[0]+SVEC[2]*SVEC[2]) ) );
+
+y[1]=(SVEC[0]*SVEC[0]+SVEC[2]*SVEC[2])/SVEC[1];
 
 
 y[2]=-SVEC[2];
