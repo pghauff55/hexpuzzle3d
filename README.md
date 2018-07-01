@@ -1,4 +1,9 @@
 # hexpuzzle3d
+
+Tested on Ubuntu 18.04
+Updated Makefile and changed the y vector equation to Y=(x^2+z^2)/y
+
+
 Hex Planet Puzzle
 
 sudo apt-get update
