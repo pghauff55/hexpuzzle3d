@@ -1,9 +1,9 @@
 CC = g++
-CFLAGS = -g -Wall -Wno-deprecated `pkg-config --cflags IlmBase` 
+CFLAGS = -g -Wall -Wno-deprecated  
 
 	
-OPENCV = `pkg-config opencv --cflags --libs`
-LIBS =  -L. $(OPENCV) `pkg-config --libs IlmBase` -lglut -lGLU -lGL -lm -lSOIL 
+
+LIBS =  -L.  -lglut -lGLU -lGL -lm -lSOIL 
 
 hexp_main: hexp_main.o hexplanet.o
 	$(CC) $(CFLAGS) -o $@ hexplanet.o $<  $(LIBS)
