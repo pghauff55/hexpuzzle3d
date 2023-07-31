@@ -1,5 +1,7 @@
 # hexpuzzle3d
-
+<div align="center">
+    <img src="extruder2.png" width="1200px"</img> 
+</div>
 Tested on Ubuntu 18.04
 Updated Makefile and changed the y vector equation to Y=(x^2+z^2)/y
 
