@@ -1,3 +1,14 @@
+//-------------------------------------------------------------------------------------------------------------------------
+// HEX PLANET
+
+
+
+
+
+// Author Pamela Hauff 2023
+
+//------------------------------------------------------------------------------------------------------------------------
+
 #include <string>
 #include <iostream>
 #include <vector>
@@ -64,7 +75,9 @@ HexPlanet::HexPlanet( int subd_level, float trandom, float twatery  ) :
 	// subdivide until desired level
 	while (m_subdLevel < subd_level)
 	{
+		std::cout<<"Level:"<<subd_level<<std::endl;
 		subdivide( trandom, twatery);
+		
 	}
 
 	// planetize if we're at level 0
@@ -499,7 +512,7 @@ int HexPlanet::getRandomTerrain( float twatery )
 {
 	if ( ((float)rand() / (float)RAND_MAX) > twatery)
 	{
-		// return a land hex
+		// return a land hex randomly
 		int t = (((float)rand() / (float)RAND_MAX) * 4) + 1;
 		if (t > HexTile::Terrain_MOUNTAIN) t = HexTile::Terrain_MOUNTAIN;
 		return t;
@@ -613,5 +626,5 @@ bool HexPlanet::rayHitPlanet( Imath::V3f p, Imath::V3f dir, Imath::V3f &result )
 	//d = b*b - 4.0f*a*c;
 	//if (d <=0 ) return false;
 	//result = p + ((-b - sqrt(d)) / 2.0f*a)*dir;
-	//return true;
+	return true;
 }
