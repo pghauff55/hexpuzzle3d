@@ -1,6 +1,7 @@
 # hexpuzzle3d
+
 <div align="center">
-    <img src="Screenshot from 2023-08-01 05-10-00.png" width="1200px"</img> 
+    <img src="Screenshot from 2023-08-06 09-58-32.png" width="1200px"</img> 
 </div>
 Tested on Ubuntu 18.04
 Updated Makefile and changed the y vector equation to Y=(x^2+z^2)/y
