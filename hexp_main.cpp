@@ -424,7 +424,8 @@ glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glMatrixMode( GL_PROJECTION );
   glLoadIdentity();
   gluPerspective( 50.0f, 1.0f, 1.0f, 5000.0f );
-
+  int x_vp=-400,y_vp=-400;
+glViewport(x_vp,y_vp-250,SCREEN_WIDTH-2*x_vp,SCREEN_HEIGHT-2*y_vp-250);
   
  float dt=0.000007/2;
 float dsx=0,dsy=0,dsz=0;

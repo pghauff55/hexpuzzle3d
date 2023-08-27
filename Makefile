@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -g -Wall -Wno-deprecated  
+CFLAGS = -g -O3
 
 	
 
